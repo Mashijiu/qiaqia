@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="logo"></div>
+			<div class="PageKV">
+				<img src="img/01/fenxiang_03_02.png" class="mainKV" />
+				<img src="img/01/feiji_07.png" class="planeKV" />
+				<img src="img/01/yun_03.png" class="yunTKV" />
+				<img src="img/02/yun_03.png" class="yunBKV" />
+				<img src="img/01/wenzi.png" class="wordKV" />
+				<img src="img/01/anniu.png" class="btnKV" />
+			</div>
+			<div class="main">
+
+				<img src="img/01/reqiqiu_bot.png" class="qiqiu" />
+				<img src="img/01/diqiu_03.png" class="earth" />
+				<div class="page1">
+					<img src="img/01/10_03.png" class="yinghua" />
+					<img src="img/02/mupai_03.png" class="word1" />
+					<img src="img/01/feiji_07.png" class="plane1" />
+				</div>
+				<div class="page2">
+					<img src="img/01/hhhh_03.png" class="xunyicao" />
+					<img src="img/3/mupai_06.png" class="word2" />
+					<img src="img/01/feiji_07.png" class="plane2" />
+				</div>
+				<div class="page3">
+					<img src="img/01/12_02.png" class="haitan" />
+					<img src="img/04/mupai_03.png" class="word3" />
+				</div>
+				<div class="page4">
+					<img src="img/05/0502.png" class="changcheng" />
+					<img src="img/05/05_03.png" class="boy" />
+					<img src="img/05/mupai_03.png" class="word4" />
+					<img src="img/05/shenzhouche_03.png" class="car" />
+				</div>
+
+			</div>
+			<div class="end">
+				<img src="img/06/btn_03.png" class="btnEnd"/>
+				<img src="img/07/btn_03.png" class="btnWordEnd"/>
+				<img src="img/07/btn_07.png" class="btnEndQia"/>
+				<img src="img/07/btn_11.png" class="btnEndCar"/>
+			</div>
+			<img src="img/02/zhongjing.png" class="zhongjing" />
+			<div class="gray">
+				<img src="img/08/fenxiang_03.png" class="btnShare"/>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+	<script src="js/jquery-1.12.4min.js"></script>
+	<!--<script type="text/javascript">
+		var wrap = document.querySelector(".wrap");
+		wrap.style.width = window.innerWidth + "px";
+		wrap.style.height = window.innerHeight + "px";
+	</script>-->
+	<script src="js/index.js"></script>
+
+</html>

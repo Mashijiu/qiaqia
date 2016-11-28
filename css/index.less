@@ -1,0 +1,75 @@
+@-webkit-keyframes yunBKV {
+    from {
+        left: 0%;
+    }
+    to {
+        left：100%;
+    }
+}
+@-webkit-keyframes yunTKV {
+    from {
+        left: 100%;
+    }
+    to {
+        left：-3rem;
+    }
+}
+.wrap {
+    position: relative;
+    .logo {
+        width: 20%;
+        height: 4%;
+        background-image: url("../img/01/logo.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 2%;
+        left: 5%;
+        z-index: 5;
+    }
+    .PageKV {
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/01/bg.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        .mainKV {
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: 15%;
+            left: 0;
+        }
+        .planeKV {
+            width: 11rem;
+            height: 5rem;
+            position: absolute;
+            bottom: 45%;
+            left: 30%;
+        }
+        .wordKV {
+            width: 76%;
+            height: 20%;
+            position: absolute;
+            bottom: 18%;
+            left: 12%;
+        }
+        .yunTKV {
+            width: 3rem;
+            height: 1rem;
+            position: absolute;
+            top: 15%;
+            left: 80%;
+            animation: yunTKV 10s linear infinite;
+        }
+        .yunBKV {
+            width: 6rem;
+            height: 2.5rem;
+            position: absolute;
+            bottom: 15%;
+            left: 20;
+            animation: yunBKV 10s linear infinite;
+        }
+    }
+}

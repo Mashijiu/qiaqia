@@ -1,0 +1,427 @@
+.wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.wrap .logo {
+	width: 23%;
+	height: 4%;
+	background-image: url("../img/01/logo.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 2%;
+	left: 5%;
+	z-index: 5;
+}
+
+.wrap .PageKV,
+.wrap .main {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/01/bg.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.wrap .PageKV .mainKV {
+	width: 100%;
+	height: 70%;
+	position: absolute;
+	top: 15%;
+	left: 0;
+}
+
+@-webkit-keyframes planeSlideR {
+	from {
+		left: 100%;
+	}
+	to {
+		left：30%;
+	}
+}
+
+.wrap .PageKV .planeKV {
+	width: 11rem;
+	height: 5rem;
+	position: absolute;
+	bottom: 45%;
+	left: 30%;
+	animation: planeSlideR 3s linear forwards;
+}
+
+@-webkit-keyframes wordKV {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.wrap .PageKV .wordKV {
+	width: 76%;
+	height: 20%;
+	position: absolute;
+	bottom: 18%;
+	left: 12%;
+	animation: wordKV 4s linear forwards;
+}
+
+@-webkit-keyframes yunTKV1 {
+	from {
+		left: 100%;
+	}
+	to {
+		left：-3rem;
+	}
+}
+
+.wrap .PageKV .yunTKV {
+	width: 3rem;
+	height: 1rem;
+	position: absolute;
+	top: 15%;
+	left: -3rem;
+	animation: yunTKV1 10s linear infinite;
+}
+
+@-webkit-keyframes yunBKV1 {
+	from {
+		left: -6rem;
+	}
+	to {
+		left：100%;
+	}
+}
+
+.wrap .PageKV .yunBKV {
+	width: 6rem;
+	height: 2.5rem;
+	position: absolute;
+	bottom: 15%;
+	left: 100%;
+	animation: yunBKV1 10s linear infinite;
+}
+
+@-webkit-keyframes btnChangeSize {
+	0% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0.9);
+	}
+}
+
+.wrap .PageKV .btnKV {
+	display: none;
+	width: 60%;
+	height: 10%;
+	position: absolute;
+	bottom: 6%;
+	left: 20%;
+	animation: btnChangeSize 1s infinite linear;
+}
+
+
+/*-------------------------------------------*/
+
+.wrap .main {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.wrap .main .page1 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.wrap .main .page2,
+.wrap .main .page3,
+.wrap .main .page4 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+}
+
+.wrap .main .earth {
+	width: 140%;
+	position: absolute;
+	top: 50%;
+	left: -20%;
+}
+
+@-webkit-keyframes yinghuaAppear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.wrap .main .yinghua {
+	width: 120%;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	animation: yinghuaAppear 4s linear forwards;
+}
+
+.wrap .zhongjing {
+	width: 100%;
+	height: 45%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+@-webkit-keyframes slideYun {
+	from {
+		left: -25%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+.wrap .yun {
+	position: absolute;
+	animation: slideYun 10s linear infinite;
+}
+
+@-webkit-keyframes plane1 {
+	from {
+		left: 100%
+	}
+	to {
+		left: -11rem
+	}
+}
+
+.wrap .main .plane1,
+.wrap .main .page2 .plane2 {
+	width: 11rem;
+	height: 5rem;
+	position: absolute;
+	top: 10%;
+	left: -11rem;
+	animation: plane1 4s linear forwards;
+	z-index: 3;
+}
+
+@-webkit-keyframes word1Opcity {
+	0% {
+		left: 80%;
+		top: 15%;
+		width: 20%;
+		height: 6%;
+		opacity: 0;
+	}
+	20% {
+		left: 80%;
+		top: 15%;
+		width: 20%;
+		height: 6%;
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		left: 5%;
+		top: 60%;
+		width: 85%;
+		height: 33%;
+	}
+}
+
+.wrap .main .word1,
+.wrap .main .page2 .word2,
+.wrap .main .page3 .word3,
+.wrap .main .page4 .word4 {
+	width: 20%;
+	height: 6%;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	z-index: 2;
+	animation: word1Opcity 3s forwards;
+	display: none;
+}
+
+@-webkit-keyframes xunyicaoRepear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.wrap .main .xunyicao {
+	width: 180%;
+	height: 100%;
+	position: absolute;
+	bottom: -20%;
+	left: -40%;
+	animation: xunyicaoRepear 2s linear;
+	display: none;
+}
+
+@-webkit-keyframes plane2 {
+	0% {
+		left: 100%;
+	}
+	20% {
+		left: 100%;
+	}
+	100% {
+		left: -11rem;
+	}
+}
+
+.wrap .main .page2 .word2 {
+	display: none;
+	animation: word1Opcity 4s forwards;
+}
+
+.wrap .main .page2 .plane2 {
+	animation: plane2 5s linear;
+	display: none;
+}
+.wrap .main .page3 .haitan {
+	width: 136%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	left: -18%;
+	display: none;
+}
+
+.wrap .main .page3 .word3 {
+	display: none;
+	/*animation: word1Opcity 4s forwards;*/
+}
+
+@-webkit-keyframes qiqiuUP {
+	0 {
+		top: 100%;
+	}
+	100% {
+		top: -18%;
+	}
+}
+
+.wrap .main .qiqiu {
+	width: 50%;
+	height: 18%;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	animation: qiqiuUP 10s linear forwards;
+	display: none;
+}
+
+
+/*.wrap .main .page4{
+	display: block;
+}*/
+
+@-webkit-keyframes car {
+	0 {
+		left: 100%;
+	}
+	50% {
+		left: 100%;
+	}
+	100% {
+		left: -60%;
+	}
+}
+
+.wrap .main .page4 .car {
+	width: 60%;
+	height: 15%;
+	position: absolute;
+	bottom: 1%;
+	left: 100%;
+	z-index: 55;
+	animation: car 5s forwards;
+	display: none;
+}
+
+.wrap .main .page4 .changcheng {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	display: none;
+}
+
+.wrap .main .page4 .boy {
+	width: 20%;
+	position: absolute;
+	top: 35%;
+	display: none;
+}
+
+.wrap .end {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/06/06.png);
+	background-size: 100% 100%;
+	display: none;
+}
+
+.wrap .end .btnEnd {
+	width: 60%;
+	height: 11%;
+	position: absolute;
+	bottom: 15%;
+	left: 20%;
+	/*animation: btnChangeSize 1s infinite linear;*/
+	/*display: none;*/
+}
+.wrap .end .btnWordEnd{
+	width: 80%;
+	bottom: 25%;
+	position: absolute;
+	left: 10%;
+	display: none;
+}
+.wrap .end .btnEndQia,.wrap .end .btnEndCar{
+	width: 75%;
+	bottom: 13%;
+	position: absolute;
+	left: 12.5%;
+	display: none;
+}
+.wrap .end .btnEndCar{
+	bottom: 1%;	
+}
+.wrap .gray{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 11111;
+	display: none;
+}
+.wrap .gray .btnShare{
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	width: 40%;
+}
+
+/*# sourceMappingURL=index.css.map */
